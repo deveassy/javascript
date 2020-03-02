@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        function get_member1() {
+            return 'eassy'; //eassy만 출력 후 {} 밖으로 나옴
+            return 'ethen';
+            return 'moon';
+        }
+        alert(get_member1());
+        */
+       /*
+       function get_argument(arg1, arg2) {
+           return (arg1 + arg2); //여전히 return값은 1개만 출력될 수 있음
+       }
+       alert(get_argument(10, 20));
+       alert(get_argument(30, 50));
+       */
+      numbering = function () {
+          i = 0;
+          while(i < 10) {
+              document.write(i);
+                  i += 1;
+          }
+      } //밑의 함수식과 같음
+      function numbering() {
+          i = 0;
+          while(i < 10) {
+              document.write(i);
+              i += 1;
+          }
+      }
+
+
+      (function () { //익명함수
+          i = 0;
+          while(i < 10) {
+              document.write(i);
+              i += 1;
+          }
+      })();
+    </script>
+</body>
+</html>
