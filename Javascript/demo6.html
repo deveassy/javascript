@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <!-- <script> 
+        //var grades = {'eassy':80,'moon':85,'ethen':70};
+        // alert(grades['eassy'])
+
+        /*
+        var grades = {}; // = var grades = new Object();
+        grades['eassy'] = 80;
+        grades['moon'] = 85;
+        grades['ethen'] = 70;
+        */
+    </script> -->
+
+
+    <!-- <ul>
+        <li>eassy</li>
+        <li>eunji</li>
+        <li>grace</li>
+    </ul>
+    <script type="text/javascript">
+        var grades = {'eassy':20, 'ethen':60, 'moon':40};
+        for(var name in grades) {
+            document.write("<li>key : " + name + " value :" + grades[name] + "</li>");
+        }
+    </script> -->
+
+    <script type="text/javascript">
+    var grades = {
+        'list' : {'eassy' : 10, 'ethen' : 20, 'moon' : 30},
+        'show' : {'eunji' : 1, 'eunho' : 2, 'won' : 3},
+        'ham' : function() {
+            for(var name in this.list) {
+                console.log(name, this.list[name]);
+            }
+        }
+    }
+    alert(grades['show']['won']);
+    </script>
+</body>
+</html>

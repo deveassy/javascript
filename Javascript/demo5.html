@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        function get_members() {
+            return['eassy', 'moon', 'ethen', 'soup'];
+        }
+
+        members = get_members();
+
+        // document.write(members[0].toUpperCase()+"<br />");
+        // document.write(members[1].toUpperCase()+"<br />");
+        // document.write(members[2].toUpperCase()+"<br />");
+        
+        for(var i = 0; i < members.length; i++) { //members의 인자 개수에 따라 유동적으로 바뀔 수 있음
+            document.write(members[i].toUpperCase()+"<br />");
+        }
+    </script>
+</body>
+</html>
