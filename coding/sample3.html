@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array extension</title>
+</head>
+<body>
+    <script>
+        // var arr = new Array('seoul', 'new york', 'ladarkh', 'busan', 'Tsukuba');
+        // function getRandomValueFromArray(arr){
+        //     var index = Math.floor(arr.length*Math.random()); 배열의 길이인 0부터 1사이의 소수점들을 없애기 위해 floor사용 -> 소수점들을 절삭해주는 역할
+        //     return arr[index];
+        // }
+        // console.log(getRandomValueFromArray(arr));
+
+        Array.prototype.random = function(){
+            var index = Math.floor(this.length*Math.random());
+            return this[index];
+        }
+        var arr = new Array('seoul', 'new york', 'ladarkh', 'busan', 'Tsukuba');
+        console.log(arr.random());
+    </script>
+</body>
+</html>
